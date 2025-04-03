@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Front End
 
-## Getting Started
+This is the repository that contains the front end of Spacio Progressive Web Aplication.
 
-First, run the development server:
+### Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+src/
+├── app/ # Main folder of the App Router
+│ ├── (group)/ # You can use route groups (optional)
+│ ├── page.tsx # Main page
+│ └── ... # Other pages and subdirectories of routes
+│
+├── components/ # Reusable application components
+│ ├── Button.tsx # Example of a component
+│ └── ... # Other components
+│
+├── styles/ # Global style files and MUI themes
+│ ├── global.css # Global styles
+│ ├── theme.ts # Material UI theme (theme configuration)
+│ └── ... # Other styles
+│
+├── utils/ # Utility functions and helpers
+│ ├── formatDate.ts # Example of a utility function
+│ └── ... # Other helpers
+│
+├── config/ # Any Configuration File
+│
+├── types/ # TypeScript interfaces and types
+│ ├── User.ts # Example of a user type or interface
+│ └── ... # Other types and interfaces
+│
+├── hooks/ # Custom React hooks
+│ ├── useAuth.ts # Example of a custom hook
+│ └── ... # Other custom hooks
+│
+└── services/ # Services and business logic
+│ ├── authService.ts # Authentication logic
+└── ... # Other services
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `ci-check`: Runs a series of checks including Prettier, linting, and TypeScript type checking to ensure code quality.
+- `prettier:check`: Checks the code formatting using Prettier.
+- `prettier:fix`: Fixes the code formatting issues using Prettier.
+- `lint`: Runs the Next.js linter to check for code quality issues.
+- `type-check`: Runs TypeScript type checking without emitting any output files.
