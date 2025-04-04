@@ -1,7 +1,13 @@
+"use client";
+import { Button } from "@mui/material";
 import React from "react";
 
 const Home: React.FC = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Button>Hola</Button>
+    </div>
+  );
 };
 
 export default Home;
