@@ -2,6 +2,7 @@
 import { createTheme } from "@mui/material/styles";
 import { ColorPalette, FONT_FAMILY } from "./constants/ui-constants";
 
+// This is the theme global styles configuration for Material UI components
 const theme = createTheme({
   palette: {
     primary: {
@@ -32,6 +33,11 @@ const theme = createTheme({
       main: ColorPalette.ERROR_DEFAULT,
       light: ColorPalette.ERROR_ACTION,
       dark: ColorPalette.ERROR_HOVER,
+    },
+    info: {
+      main: ColorPalette.PRIMARY_DEFAULT,
+      light: ColorPalette.PRIMARY_ACTION,
+      dark: ColorPalette.PRIMARY_HOVER,
     },
   },
   typography: {
@@ -163,9 +169,9 @@ const theme = createTheme({
             },
           },
           "&.MuiButton-text": {
-            color: ColorPalette.PRIMARY_HOVER,
+            color: ColorPalette.PRIMARY_DEFAULT,
             "&:hover": {
-              color: ColorPalette.PRIMARY_DEFAULT,
+              color: ColorPalette.PRIMARY_HOVER,
               textTransform: "underline",
             },
           },

@@ -1,3 +1,10 @@
+// This enum represents constant neutral
+enum NeutralColors {
+  BLACK = "#000000",
+  WHITE = "#FFFFF",
+}
+
+// This enum represents the color palette constants for the ui
 export enum ColorPalette {
   // Primary
   PRIMARY_DEFAULT = "#F24F13",
@@ -5,8 +12,8 @@ export enum ColorPalette {
   PRIMARY_ACTION = "#F66A33",
 
   // Secondary
-  SECONDARY_DEFAULT = "#000000",
-  SECONDARY_HOVER = "#000000",
+  SECONDARY_DEFAULT = NeutralColors.BLACK,
+  SECONDARY_HOVER = "#1C1B1B",
   SECONDARY_ACTION = "#333333",
 
   // Tertiary
@@ -30,16 +37,13 @@ export enum ColorPalette {
   SUCCESS_ACTION = "#22C55E",
 
   // Background & Neutral
-  BACKGROUND = "#FFFFFF",
-  NEUTRAL_BLACK = "#000000",
-  NEUTRAL_WHITE = "#FFFFFF",
+  BACKGROUND = NeutralColors.WHITE,
+  NEUTRAL_BLACK = NeutralColors.BLACK,
+  NEUTRAL_WHITE = NeutralColors.WHITE,
 
   // Grey
   GREY_DEFAULT = "#6F6F6F",
   LIGHT_GREY_DEFAULT = "#E0E0E0",
-
-  // Link
-  LINK_DEFAULT = "#F24F13",
 }
 
 export const FONT_FAMILY = "Montserrat, sans-serif";
